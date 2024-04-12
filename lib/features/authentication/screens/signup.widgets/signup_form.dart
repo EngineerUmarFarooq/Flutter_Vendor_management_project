@@ -20,62 +20,11 @@ class VSignUpForm extends StatelessWidget {
         children: [
           Row(
             children: [
-              /// First name
-              Expanded(
-                child: TextFormField(
-                  expands: false,
-                  decoration: const InputDecoration(
-                    labelText: VTexts.firstName,
-                    prefixIcon: Icon(Iconsax.user),
-                  ), // InputDecoration
-                ), // TextFormField
-              ),
-              const SizedBox(
-                width: VSizes.spaceBtwInputFields,
-              ),
-              /// Last name
-              Expanded(
-                child: TextFormField(
-                  expands: false,
-                  decoration: const InputDecoration(
-                    labelText: VTexts.lastName,
-                    prefixIcon: Icon(Iconsax.user),
-                  ), // InputDecoration
-                ), // TextFormField
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: VSizes.spaceBtwInputFields,
-          ),
-          /// User name
-          TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
-                labelText: VTexts.username,
-                prefixIcon: Icon(Iconsax.user_edit),
-              )),
-          const SizedBox(height: VSizes.spaceBtwInputFields,),
-          /// Email
-          TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
+        Decoration(
                 labelText: VTexts.email,
                 prefixIcon: Icon(Iconsax.direct),
               )),
-          const SizedBox(height: VSizes.spaceBtwInputFields,),
-          /// Phone No
-          TextFormField(decoration: const InputDecoration(
-            labelText: VTexts.phoneNo,
-            prefixIcon: Icon(Iconsax.call),
-          )
-          ),
-          const SizedBox(height: VSizes.spaceBtwInputFields,),
-          /// Password
-          TextFormField(
-              obscureText: true,
-              decoration: const InputDecoration(
-                  labelText: VTexts.password,
+     
                   prefixIcon: Icon(Iconsax.password_check),
                   suffixIcon: Icon(Iconsax.eye_slash)
               )
