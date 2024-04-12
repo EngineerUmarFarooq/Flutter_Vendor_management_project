@@ -21,20 +21,7 @@ class VLoginHeader extends StatelessWidget {
         Image(
           height: 100,
           image: AssetImage(
-              dark ? VImages.lightAppLogo : VImages.darkAppLogo),
-        ),
-        Text(
-          VTexts.loginTitle,
-          style: Theme.of(context).textTheme.headlineMedium,
-        ), // Image
-        const SizedBox(
-          height: VSizes.sm,
-        ),
-        Text(
-          VTexts.loginSubTitle,
-          style: Theme.of(context).textTheme.bodyMedium,
-        ), // Image
-      ],
+       
     );
   }
 }
