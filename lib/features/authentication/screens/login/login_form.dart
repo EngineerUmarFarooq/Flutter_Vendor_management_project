@@ -16,31 +16,8 @@ class VLoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: VSizes.spacesBtwSections),
-        child: Column(
-          children: [
-            ///Email
-            TextFormField(
-              decoration: const InputDecoration(
-                  prefixIcon: Icon(Iconsax.direct_right),
-                  labelText: VTexts.email),
-            ),
-            const SizedBox(
-              height: VSizes.spaceBtwInputFields,
-            ),
-            /// Password
-            TextFormField(
-              decoration: const InputDecoration(
-                prefixIcon: Icon(Iconsax.password_check),
-                labelText: VTexts.password,
-                suffixIcon: Icon(Iconsax.eye_slash),
-              ),
-            ),
-            const SizedBox(
-                height: VSizes.spaceBtwInputFields/2
-            ),
-            ///Remember Me & Forget Password
+     
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
